@@ -1,0 +1,22 @@
+<configuration>
+    <appender name="saidaPadrao" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} %highlight(%-5level) %cyan(%logger{15}) - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="arquivo" class="ch.qos.logback.core.FileAppender">
+        <file>fragmentador-arquivos.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{15} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.algaworks.arquivos.fragmentador" level="TRACE" />
+
+    <root level="INFO">
+        <appender-ref ref="saidaPadrao" />
+        <appender-ref ref="arquivo" />
+    </root>
+</configuration>

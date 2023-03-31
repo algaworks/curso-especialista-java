@@ -1,0 +1,13 @@
+<configuration>
+    <appender name="saidaPadrao" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date %level %logger - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.algaworks.banco.negocio" level="TRACE" />
+
+    <root level="INFO">
+        <appender-ref ref="saidaPadrao" />
+    </root>
+</configuration>
