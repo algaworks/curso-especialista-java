@@ -10,11 +10,11 @@ public class Principal {
                 1981, Calendar.SEPTEMBER, 20);
 
         if (dataNascimentoJoao.after(minhaDataNascimento)) {
-            System.out.println("João é mais velho");
+            System.out.println("João é mais novo");
         }
 
         if (dataNascimentoJoao.before(minhaDataNascimento)) {
-            System.out.println("João é mais novo");
+            System.out.println("João é mais velho");
         }
 
         if (dataNascimentoJoao.compareTo(minhaDataNascimento) == 0) {
