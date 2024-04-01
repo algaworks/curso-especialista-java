@@ -16,8 +16,8 @@ public class Principal6 {
                 .map(Venda::getCliente)
                 .map(Cliente::nome)
                 .distinct()
+                .sorted()
                 .collect(Collectors.toList());
         System.out.println(clientes);
     }
-
 }
