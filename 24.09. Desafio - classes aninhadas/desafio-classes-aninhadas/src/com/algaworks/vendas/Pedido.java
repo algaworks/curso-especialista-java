@@ -10,7 +10,7 @@ public class Pedido {
 
     private final Cliente cliente;
     private StatusPedido status = StatusPedido.RASCUNHO;
-    BigDecimal valorTotal = BigDecimal.ZERO;
+    private BigDecimal valorTotal = BigDecimal.ZERO;
     private final List<ItemPedido> itens = new ArrayList<>();
 
     public Pedido(Cliente cliente) {
